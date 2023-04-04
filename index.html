@@ -11,11 +11,11 @@
     * {
         margin: 0;
         padding: 0;
-        color: #fff;
     }
 
     body {
         background-color: #000;
+        color: #fff;
         font-family: monospace;
         display: flex;
         justify-content: center;
@@ -29,25 +29,13 @@
     }
 
     a:any-link {
+        color: #9f200f;
         text-decoration: none;
     }
 
     a:any-link:hover {
         text-decoration: underline;
     }
-
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    footer span#year {
-        color: #f00;
-    }
-
 </style>
 
 <body>
@@ -55,13 +43,5 @@
         <li><a href="./pgp.txt">Public PGP Key</a></li>
         <li><a href="https://t.me/tranzactie">Telegram</a></li>
     </ul>
-    
-    <footer>
-        <p>© <span id="year"><noscript>$year</noscript></span> 8xu. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.querySelector('#year').innerHTML = new Date().getFullYear();
-    </script>
 </body>
 </html>
